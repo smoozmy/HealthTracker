@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6F925AAB2CC3CE72008915DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F925AAA2CC3CE72008915DD /* AppDelegate.swift */; };
 		6F925AAD2CC3CE72008915DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F925AAC2CC3CE72008915DD /* SceneDelegate.swift */; };
-		6F925AAF2CC3CE72008915DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F925AAE2CC3CE72008915DD /* ViewController.swift */; };
-		6F925AB22CC3CE72008915DD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F925AB12CC3CE72008915DD /* Base */; };
 		6F925AB42CC3CE73008915DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F925AB32CC3CE73008915DD /* Assets.xcassets */; };
 		6F925AB72CC3CE73008915DD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 6F925AB62CC3CE73008915DD /* Base */; };
 /* End PBXBuildFile section */
@@ -19,12 +17,27 @@
 		6F925AA72CC3CE72008915DD /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F925AAA2CC3CE72008915DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F925AAC2CC3CE72008915DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F925AAE2CC3CE72008915DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F925AB12CC3CE72008915DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F925AB32CC3CE73008915DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F925AB62CC3CE73008915DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F925AB82CC3CE73008915DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewController.swift,
+			);
+			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6F925ABE2CC3DBC8008915DD /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		6F925ABF2CC3DBD8008915DD /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+		6F925AC02CC3DBE0008915DD /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
+		6F925AC12CC3DBF1008915DD /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F925AA42CC3CE72008915DD /* Frameworks */ = {
@@ -58,13 +71,23 @@
 			children = (
 				6F925AAA2CC3CE72008915DD /* AppDelegate.swift */,
 				6F925AAC2CC3CE72008915DD /* SceneDelegate.swift */,
-				6F925AAE2CC3CE72008915DD /* ViewController.swift */,
-				6F925AB02CC3CE72008915DD /* Main.storyboard */,
-				6F925AB32CC3CE73008915DD /* Assets.xcassets */,
-				6F925AB52CC3CE73008915DD /* LaunchScreen.storyboard */,
-				6F925AB82CC3CE73008915DD /* Info.plist */,
+				6F925ABE2CC3DBC8008915DD /* Models */,
+				6F925ABF2CC3DBD8008915DD /* Views */,
+				6F925AC02CC3DBE0008915DD /* ViewModels */,
+				6F925AC12CC3DBF1008915DD /* Controllers */,
+				6F925AC72CC3DCAB008915DD /* Resources */,
 			);
 			path = HealthTracker;
+			sourceTree = "<group>";
+		};
+		6F925AC72CC3DCAB008915DD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F925AB52CC3CE73008915DD /* LaunchScreen.storyboard */,
+				6F925AB82CC3CE73008915DD /* Info.plist */,
+				6F925AB32CC3CE73008915DD /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +150,6 @@
 			files = (
 				6F925AB42CC3CE73008915DD /* Assets.xcassets in Resources */,
 				6F925AB72CC3CE73008915DD /* Base in Resources */,
-				6F925AB22CC3CE72008915DD /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +160,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F925AAF2CC3CE72008915DD /* ViewController.swift in Sources */,
 				6F925AAB2CC3CE72008915DD /* AppDelegate.swift in Sources */,
 				6F925AAD2CC3CE72008915DD /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +168,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6F925AB02CC3CE72008915DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6F925AB12CC3CE72008915DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6F925AB52CC3CE73008915DD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,12 +307,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q8YPLYNT34;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HealthTracker/Info.plist;
+				INFOPLIST_FILE = HealthTracker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +320,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.smoozmy.HealthTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,12 +339,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q8YPLYNT34;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HealthTracker/Info.plist;
+				INFOPLIST_FILE = HealthTracker/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +352,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.smoozmy.HealthTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
