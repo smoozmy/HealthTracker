@@ -26,14 +26,21 @@
 		6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				ViewController.swift,
+				ProfileViewController.swift,
+			);
+			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
+		};
+		6F925ACA2CC3EF5A008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				User.swift,
 			);
 			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6F925ABE2CC3DBC8008915DD /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		6F925ABE2CC3DBC8008915DD /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6F925ACA2CC3EF5A008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		6F925ABF2CC3DBD8008915DD /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 		6F925AC02CC3DBE0008915DD /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
 		6F925AC12CC3DBF1008915DD /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
