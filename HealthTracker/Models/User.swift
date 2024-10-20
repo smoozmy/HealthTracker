@@ -5,7 +5,7 @@ struct User {
     let username: String
     let firstName: String
     let lastName: String
-    var weight: Double
+    var startWeight: Double
     var height: Double
     var sex: Bool
     var lifestyle: String
