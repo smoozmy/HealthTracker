@@ -26,7 +26,9 @@
 		6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				NutritionViewController.swift,
 				ProfileViewController.swift,
+				SportViewController.swift,
 			);
 			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
 		};

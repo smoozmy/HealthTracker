@@ -345,7 +345,7 @@ extension ProfileViewController {
             mainStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             mainStackView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 16),
             mainStackView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -16),
-            mainStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            mainStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
             
             headerStackView.topAnchor.constraint(equalTo: mainStackView.topAnchor),
             headerStackView.leadingAnchor.constraint(equalTo: mainStackView.leadingAnchor),
@@ -389,7 +389,7 @@ extension ProfileViewController {
             statisticStackView.topAnchor.constraint(equalTo: weightStackView.bottomAnchor),
             statisticStackView.leadingAnchor.constraint(equalTo: mainStackView.leadingAnchor),
             statisticStackView.trailingAnchor.constraint(equalTo: mainStackView.trailingAnchor),
-            statisticStackView.bottomAnchor.constraint(equalTo: updateGoalButton.topAnchor, constant: -70),
+            statisticStackView.bottomAnchor.constraint(equalTo: updateGoalButton.topAnchor, constant: -30),
 //            statisticStackView.heightAnchor.constraint(equalToConstant: 250),
             
             foodStatisticView.topAnchor.constraint(equalTo: statisticStackView.topAnchor),
