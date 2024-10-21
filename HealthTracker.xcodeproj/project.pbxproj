@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6F925AA72CC3CE72008915DD /* HealthTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F925AA72CC3CE72008915DD /* Health Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Health Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F925AAA2CC3CE72008915DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F925AAC2CC3CE72008915DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6F925AB32CC3CE73008915DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,14 +26,23 @@
 		6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				ViewController.swift,
+				NutritionViewController.swift,
+				ProfileViewController.swift,
+				SportViewController.swift,
+			);
+			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
+		};
+		6F925ACA2CC3EF5A008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				User.swift,
 			);
 			target = 6F925AA62CC3CE72008915DD /* HealthTracker */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6F925ABE2CC3DBC8008915DD /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
+		6F925ABE2CC3DBC8008915DD /* Models */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6F925ACA2CC3EF5A008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Models; sourceTree = "<group>"; };
 		6F925ABF2CC3DBD8008915DD /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
 		6F925AC02CC3DBE0008915DD /* ViewModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModels; sourceTree = "<group>"; };
 		6F925AC12CC3DBF1008915DD /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (6F925AC42CC3DC40008915DD /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
@@ -61,7 +70,7 @@
 		6F925AA82CC3CE72008915DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F925AA72CC3CE72008915DD /* HealthTracker.app */,
+				6F925AA72CC3CE72008915DD /* Health Tracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +116,7 @@
 			);
 			name = HealthTracker;
 			productName = HealthTracker;
-			productReference = 6F925AA72CC3CE72008915DD /* HealthTracker.app */;
+			productReference = 6F925AA72CC3CE72008915DD /* Health Tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +328,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.smoozmy.HealthTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Health Tracker";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -351,7 +360,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.smoozmy.HealthTracker;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Health Tracker";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
